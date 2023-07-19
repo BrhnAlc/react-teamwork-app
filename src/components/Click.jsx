@@ -25,7 +25,7 @@ const Click = () => {
 <button className="bg-danger m-2" onClick={()=>setCount(0)}>Sıfırla</button>
 <button className="" onClick={()=>setCount(count - 1)}>Azalt</button>
 <button className="text-bg-danger m-2" onClick={handleClick}>Artır</button>
-<button className="text-bg-danger m-2" onClick={handleKat}>on kat</button>
+<button className="text-bg-danger m-2" onClick={handleKat}>on kat artır</button>
        
 </div>
   )
