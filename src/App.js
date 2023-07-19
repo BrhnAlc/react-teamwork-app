@@ -7,6 +7,8 @@ import HighConponent from './components/HighConponent';
 import NameGetter from './components/NameGetter';
 import NumberShower from './components/NumberShower';
 import Second from './components/Second';
+import LoginForm from './components/LoginForm';
+import UseEffect from './components/UseEffect';
 
 
 const App = () => {
@@ -31,8 +33,11 @@ const App = () => {
       {/* <Click/> */}
       {/* <NameGetter/> */}
       {/* <HighConponent/> */}
-      <NumberShower name={"Burhan"}/>
-      <button onClick={handleEkle}>Ekle</button>
+      {/* <NumberShower name={"Burhan"}/> */}
+      {/* <button onClick={handleEkle}>Ekle</button> */}
+      {/* <LoginForm/> */}
+
+      <UseEffect/>
     </div>
   )
 }
