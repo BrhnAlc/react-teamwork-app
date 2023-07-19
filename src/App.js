@@ -2,6 +2,7 @@
 
 import Click from './components/Click';
 import First from './components/First'
+import NameGetter from './components/NameGetter';
 import Second from './components/Second';
 
 
@@ -19,7 +20,8 @@ const age2=32;
       {/* <First name={name1} age={age1}/> */}
       {/* <First name={name2} age={age2}/> */}
       {/* <Second/> */}
-      <Click/>
+      {/* <Click/> */}
+      <NameGetter/>
     </div>
   )
 }
