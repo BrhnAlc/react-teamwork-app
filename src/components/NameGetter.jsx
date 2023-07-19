@@ -4,7 +4,13 @@
 
 const NameGetter = () => {
   return (
-    <div>NameGetter</div>
+    <div className="text-center mt-4 ">
+
+<div>isminizi giriniz: </div>
+    <input type="text"  /> 
+
+    <div>isminiz:</div>   
+    </div>
   )
 }
 
