@@ -1,22 +1,25 @@
-import { useEffect ,useState } from "react";
-
-
+import React, { useEffect, useState } from "react";
 
 const Counterr = () => {
-
-const [ count, setCount] = useState(0);
-
- useEffect=(()=>{
-    document.title =`click ${count} times`
- }, [count])
-console.log(count);
-  return (
-    <div>   
-<h1>Page Title Change</h1>
-<p>You clicked {count} times.</p>
-<button onClick={()=>setCount(count + 1)}>Click me</button>
-    </div>
-  )
-}
-
-export default Counterr
+    const [online, setOnline] = useState(false);
+  
+    useEffect(() => {
+      if (online) {
+        console.log("Kullanıcı çevrimiçi.");
+      } else {
+        console.log("Kullanıcı çevrimdışı.");
+      }
+    }, [online]);
+  
+    return (
+      <div>
+        <h1>Page Title Change</h1>
+        <p>You clicked {online ? "online" : "offline"}.</p>
+        <button onClick={() => setOnline(!online)}>
+          Toggle online/offline
+        </button>
+      </div>
+    );
+  };
+  
+  export default Counterr;
