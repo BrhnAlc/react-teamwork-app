@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useState } from "react";
 
 
@@ -6,6 +7,10 @@ import { useState } from "react";
 const UseEffect = () => {
 
 const [ number, setNumber] = useState(0);
+
+useEffect(()=>{
+    console.log(number);
+},[number]);
 
   return (
     <div>
