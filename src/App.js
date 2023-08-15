@@ -11,6 +11,7 @@ import LoginForm from './components/LoginForm';
 import UseEffect from './components/UseEffect';
 import Users from './components/Users';
 import HomePages from './components/PAGES/HomePages';
+import Axios from './components/Axios';
 
 
 const App = () => {
@@ -33,7 +34,8 @@ const App = () => {
 
       {/* <UseEffect/> */}
       {/* <Users/> */}
-      <HomePages/>
+      {/* <HomePages/> */}
+      <Axios/>
     </div>
   )
 }
